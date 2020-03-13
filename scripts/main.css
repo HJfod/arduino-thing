@@ -1,0 +1,82 @@
+:root {
+	--game-selector-color:			rgb(150,150,150);
+	--game-selector-hover:			rgb(200,200,200);
+	--time:							.2s;
+}
+
+body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.div_menu {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.div_game {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.div_game.fruit {
+
+}
+
+.div_coin {
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+	position: absolute;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.insert_coin {
+	font-family: Segoe UI;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	height: 100%;
+	align-items: center;
+}
+
+.select_game {
+	font-family: Segoe UI;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.game_selector {
+	border: none;
+	padding: 5px;
+	display: flex;
+	font-size: 24px;
+	padding-left: 25px;
+	padding-right: 25px;
+	align-items: center;
+	font-family: Segoe UI;
+	justify-content: center;
+	transition-duration: var(--time);
+	background-color: var(--game-selector-color);
+}
+
+.game_selector:hover {
+	background-color: var(--game-selector-hover);
+}
+
+button:focus {
+	outline: none;
+}

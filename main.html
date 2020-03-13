@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'/>
+<link rel='stylesheet' href='scripts/main.css'/>
+<link rel='stylesheet' href='scripts/game_fruit.css'/>
+<title>Mainio peli kone !</title>
+</head>
+<body>
+
+<div id='div_menu' class='div_menu'>
+	
+	<div class='div_coin' id='div_coin'>
+		<text id='coin_insert' class='insert_coin'>insert coin</text>
+	</div>
+	
+	<div class='div_coin' id='div_select'>
+		<text id='game_select' class='select_game'>select game</text>
+		<button class='game_selector' onclick='play_game("fruit")'>fruit game</button>
+		<button class='game_selector'>dice game</button>
+	</div>
+	
+</div>
+
+<div id='div_game_fruit' class='div_game fruit'>
+	
+	<button class='fruit_spin' onclick='fruit_spin();'>SPIN DA FRUITTT</button>
+
+    <canvas id='game_canvas' width=1280 height=720 class='game_canvas'></canvas>
+	
+</div>
+
+<script defer src='scripts/main.js'></script>
+<script defer src='scripts/game_fruit.js'></script>
+</body>
+</html>

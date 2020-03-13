@@ -1,0 +1,19 @@
+{
+  "name": "arduino-thing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.0.2",
+    "johnny-five": "^1.4.0",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.10.0"
+  }
+}
