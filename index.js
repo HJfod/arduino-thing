@@ -26,7 +26,7 @@ app.on('ready', () => {
 
 
 const five = require('johnny-five');
-const board = new five.Board();
+const board = new five.Board({ port: 'COM3' });
 
 let c = {
 	l_blink: { obj: null, pin: 5 },
